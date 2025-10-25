@@ -4,6 +4,7 @@ using gpt-5 mini from syntax.fm's snhax battle.
 https://www.youtube.com/watch?v=rBAAvG68pko
 
 I couldn't figure out the notches and neither could copilot without breaking the drop-shadow.
+I imagine the solution is to use a path and mask?
 copilot couldn't figure out the dashed line behind the duration pill. I had to write that myself.
 
 Original
