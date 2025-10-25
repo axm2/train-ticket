@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Train Ticket — Swiss Express</title>
+			<link rel="stylesheet" href="styles.css">
+		</head>
+	<body>
+		<main class="ticket" aria-label="Train ticket">
+			<!-- Header: company logo/name and price -->
+			<header class="ticket-header">
+				<div class="company">
+					<!-- Replace src with real logo when available -->
+					<img src="images/swiss-express-logo.png" alt="Swiss Express logo" class="company-logo">
+					<span class="company-name">Swiss Express</span>
+				</div>
+				<div class="price">$240</div>
+			</header>
+
+			<!-- Perforation / stub line -->
+			<div class="perforation" aria-hidden="true"></div>
+
+			<!-- Route: departing station, duration, arriving station -->
+			<section class="route" aria-label="Route information">
+				<div class="station depart">
+					<div class="abbr">ZUR</div>
+					<div class="name">Zurich</div>
+				</div>
+
+				<div class="duration" aria-hidden="false"><span class="duration-pill">1h 23m</span></div>
+
+				<div class="station arrive">
+					<div class="abbr">LUZ</div>
+					<div class="name">Luzern</div>
+				</div>
+			</section>
+
+			<!-- Passenger information: photo, name, email, seat -->
+			<section class="passenger" aria-label="Passenger information">
+				<img src="images/passenger.jpg" alt="Passenger photo" class="passenger-photo">
+
+				<div class="passenger-details">
+					<div class="passenger-name">First Last</div>
+					<div class="passenger-email">email@example.com</div>
+				</div>
+
+				<div class="seat">
+					<div class="label">Seat</div>
+					<div class="value">12A</div>
+				</div>
+			</section>
+
+			<!-- Train number and class -->
+			<section class="train-class">
+				<div class="left">
+					<div class="label">Train No</div>
+					<div class="value">JWI008</div>
+				</div>
+				<div class="right">
+					<div class="label">Class</div>
+					<div class="value">Business</div>
+				</div>
+			</section>
+
+			<!-- Departure and arrival times -->
+			<section class="times">
+				<div class="left">
+					<div class="label">Departure</div>
+					<div class="value">10:30 AM</div>
+				</div>
+				<div class="right">
+					<div class="label">Arrival</div>
+					<div class="value">2:45 PM</div>
+				</div>
+			</section>
+
+			<!-- Terminal and gate -->
+			<section class="terminal-gate">
+				<div class="left">
+					<div class="label">Terminal</div>
+					<div class="value">6D</div>
+				</div>
+				<div class="right">
+					<div class="label">Gate</div>
+					<div class="value">B16</div>
+				</div>
+			</section>
+
+			<!-- Barcode placeholder -->
+			<section class="barcode" aria-label="Barcode placeholder">
+				<!-- Add real barcode image later -->
+				<img src="images/barcode-placeholder.png" alt="Barcode placeholder" />
+			</section>
+
+			<!-- Actions -->
+			<footer class="ticket-actions">
+				<button id="download-btn" type="button">Download ticket</button>
+			</footer>
+		</main>
+	</body>
+</html>
